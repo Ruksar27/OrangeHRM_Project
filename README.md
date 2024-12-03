@@ -65,11 +65,10 @@ Before you begin, ensure that you have the following installed:
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Ruksar27/OrangeHRM_Project-automation.git
-```27
+git clone https:[//github.com/Ruksar27/OrangeHRM_Project-automation.git](https://github.com/Ruksar27/OrangeHRM_Project)
 
 ### 2. Import the project into your IDE:
-- Open your IDE and import the project as a **Maven Project**.
+- Open your IDE and import the project as a **OrangeHRM_Project**.
 
 ### 3. Maven Dependencies:
 
@@ -78,36 +77,51 @@ This project uses Maven for dependency management. The necessary dependencies ar
 Here’s a sample of the dependencies included in the `pom.xml`:
 
 ```xml
-<dependencies>
-    <!-- Selenium WebDriver -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
-    </dependency>
-    
-    <!-- TestNG -->
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.4.0</version>
-        <scope>test</scope>
-    </dependency>
-    
-    <!-- WebDriverManager for automatic browser driver management -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>4.4.3</version>
-    </dependency>
+<!--
+			https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-java</artifactId>
+				<version>4.24.0</version>
+			</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
-    <!-- Maven Surefire Plugin for running tests -->
-    <dependency>
-        <groupId>org.apache.maven.surefire</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
-    </dependency>
-</dependencies>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.3.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.3.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.18.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>
 ```
 
 ---
@@ -229,14 +243,6 @@ If you'd like to contribute to this project, feel free to fork the repository, m
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
----
 
-### Notes:
-- Customize the instructions for your specific project setup (e.g., paths, application URL).
-- Make sure to include any additional tools or setups used in your project.
-  
----
-
-Once you’ve customized the content, save it as `README.md` or simply as `README.txt` in your project root directory.
 
 
